@@ -15,15 +15,15 @@ start.textContent="Start"
 start.classList.add("button")
 buttonCon.appendChild(start)
 
+const rainbow = document.createElement('button')
+rainbow.textContent ="Rainbow Mode"
+rainbow.classList.add('rainbow')
+buttonCon.appendChild(rainbow)
+
 const resetButton = document.createElement("button")
 resetButton.textContent="Reset"
 resetButton.classList.add("button")
 buttonCon.appendChild(resetButton)
-
-let rainbow = document.createElement('button')
-rainbow.textContent ="Rainbow Mode"
-rainbow.classList.add('rainbow')
-buttonCon.appendChild(rainbow)
 
 const gridDim = document.createElement("div")
 gridDim.classList.add(`gridDim`)
