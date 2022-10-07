@@ -1,12 +1,22 @@
 :root {
     --grid-dimension:16;
 }
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 
-.buttonCon {
+button {
+    padding: 15px;
+    font-family:'Courier New', Courier, monospace
+}
+.gridDim {
     display: grid;
     background-color: white;
     grid-template-columns: repeat(var(--grid-dimension),1fr);
-    border: 1px solid black;
     height: 500px;
     width: 500px;
 }
@@ -17,6 +27,11 @@
 body {
     display: flex;
     justify-content: center;
-    background-color: blue;
+    flex-direction: column;
+    background-color: gray;
+    font-family:'Courier New', Courier, monospace
+}
+h1 {
+    text-align: center;
 }
 
